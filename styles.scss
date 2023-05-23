@@ -1,0 +1,373 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600&display=swap");
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-width: 320px;
+    font-family: "Raleway";
+}
+
+.header {
+    width: 100%;
+    height: 70px;
+    padding: 15px;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.29);
+    position: relative;
+
+    &__logo {
+        // float: left;
+        font-weight: 300;
+        font-size: 32px;
+        color: #08a6e4;
+        text-decoration: none;
+    }
+
+    &-menu-icon {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        right: 5%;
+        border: none;
+        cursor: pointer;
+    }
+
+    &-menu-nav-items {
+        display: none;
+    }
+}
+
+.opening-section {
+    padding-top: 80px;
+    text-align: center;
+    font-family: "Raleway";
+    // height: 100vh;
+
+    &__title {
+        font-size: 35px;
+    }
+    &__text {
+        font-size: 16px;
+        padding: 10px 50px;
+        margin-bottom: 30px;
+    }
+    &__img {
+        display: block;
+        max-width: 100%;
+        width: 100%;
+        height: 267px;
+        // object-position: center;
+        object-fit: cover;
+        // overflow-x: hidden;
+    }
+}
+
+.whyUs-section {
+    text-align: center;
+    // position: relative;
+
+    &__title {
+        font-weight: 300;
+        font-size: 30px;
+        padding: 0 3rem 2rem 3rem;
+    }
+    &__img {
+        display: block;
+        margin: 0 auto;
+        margin-bottom: 2rem;
+    }
+}
+
+.benefits-section {
+    background-color: #f7f7f7;
+    padding: 2.2rem 1.7rem;
+
+    &__card {
+        background-color: white;
+        padding: 0 1.5rem;
+        max-width: 500px;
+        margin: 0 auto 1.9rem auto;
+        // position: relative;
+
+        &-title {
+            font-weight: 400;
+            font-size: 30px;
+            padding: 2rem 0;
+            line-height: 35.22px;
+        }
+        &-text {
+            font-weight: 400;
+            font-size: 14px;
+            padding: 1rem 0;
+            line-height: 21px;
+        }
+        &-img-1 {
+            display: block;
+            // position: sticky;
+            max-width: 80%;
+            // max-width: 90%;
+            // overflow: hidden;
+            margin: 0 auto;
+        }
+        &-img-2 {
+            display: block;
+            max-width: 80%;
+            padding-top: 10px;
+            margin: 0 auto;
+        }
+    }
+    &-img-3 {
+        display: block;
+        max-width: 500px;
+        width: 100%;
+        height: auto;
+        margin: -1.9rem auto 0 auto;
+    }
+}
+
+.pricing-section {
+    text-align: center;
+    padding: 2rem;
+
+    &-title {
+        padding-top: 1rem;
+        margin-bottom: 2rem;
+        font-size: 36px;
+        font-weight: 400;
+        line-height: 42px;
+    }
+    &-card {
+        font-family: "Open Sans";
+        font-style: normal;
+        margin: 3.5rem auto;
+        border: 1px solid;
+        border-radius: 18px;
+        position: relative;
+        // margin-bottom: 5rem;
+        display: block;
+        max-width: 20rem;
+
+        min-height: 17rem;
+        // padding-bottom: 3rem;
+        // padding: 2rem;
+        // min-width: 15rem;
+        &:hover {
+            transform: scale(1.1);
+        }
+        &:nth-child(2):hover {
+            box-shadow: 5px 10px 27px rgba(235, 71, 110, 0.29);
+        }
+        &:nth-child(3):hover {
+            box-shadow: 5px 10px 27px rgba(7, 172, 230, 0.29);
+        }
+        &:nth-child(4):hover {
+            box-shadow: 5px 10px 27px rgba(85, 223, 180, 0.29);
+        }
+        &__title {
+            font-family: "raleway";
+            font-style: normal;
+            font-weight: 700;
+            font-size: 20px;
+            position: absolute;
+            top: 35%;
+            left: 25%;
+            transform: translate(-50%, -50%);
+        }
+        &__price {
+            font-size: 46px;
+            font-weight: 300;
+            position: absolute;
+            top: calc(35% + 1rem);
+            left: 25%;
+            transform: translate(-50%);
+            &-basic {
+                color: #eb476e;
+            }
+            &-professional {
+                color: #07ace6;
+            }
+            &-premium {
+                color: #55dfb4;
+            }
+        }
+        &__benefits {
+            position: absolute;
+            text-align: left;
+            top: 48%;
+            left: 72%;
+            transform: translate(-50%, -50%);
+            line-height: 2.5;
+        }
+        &__benefits li {
+            list-style: none;
+            white-space: nowrap;
+        }
+        &--basic {
+            border-color: #eb476e;
+        }
+        &--professional {
+            border-color: #07ace6;
+        }
+        &--premium {
+            border-color: #55dfb4;
+        }
+    }
+}
+
+.contact-section {
+    padding: 0.3rem 1.5rem;
+    display: block;
+    max-width: 25rem;
+    margin: 0 auto;
+    &-title {
+        font-family: "Raleway";
+        font-weight: 400;
+        font-size: 40px;
+    }
+    &-text {
+        font-family: "Open Sans";
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 22px;
+        margin-bottom: 2rem;
+    }
+    &-contact-info {
+        font-family: "Open Sans";
+        font-weight: 600;
+        font-size: 16px;
+        color: #a5a5a5;
+        line-height: 2.5;
+        &-email img,
+        &-phone img {
+            margin-right: 0.5rem;
+            height: 25px;
+            margin-bottom: -6px;
+        }
+    }
+}
+
+.contact-form {
+    margin-top: 2rem;
+
+    &-name,
+    &-email,
+    &-name-input,
+    &-email-input {
+        display: block;
+        margin-bottom: 1.4rem;
+    }
+
+    &-name,
+    &-email {
+        display: block;
+        font-size: 11px;
+        font-weight: 600;
+        color: #08a6e4;
+        letter-spacing: 3.28px;
+    }
+    &-name-input,
+    &-email-input {
+        font-size: 20px;
+        width: 100%;
+        outline: none;
+        border: none;
+        border-bottom: 1px solid #95989a;
+    }
+    &-checkbox {
+        margin-top: 1.5rem;
+        display: inline-block;
+        position: relative;
+    }
+    &-checkbox span {
+        font-family: "Open Sans";
+        font-weight: 400;
+        font-size: 12px;
+        display: inline-block;
+        left: 10%;
+        text-align: right;
+    }
+}
+
+.footer {
+    margin-top: 2rem;
+    width: 100%;
+    position: sticky;
+    box-shadow: 0px -5px 40px rgba(0, 0, 0, 0.2);
+    padding: 1rem;
+    position: relative;
+    // display: inline-block;
+
+    &-logo {
+        font-weight: 300;
+        font-size: 26px;
+        color: #08a6e4;
+        text-decoration: none;
+    }
+    &-text {
+        font-size: 11px;
+        font-family: "Open Sans";
+        font-weight: 400;
+    }
+    &-media {
+        position: absolute;
+        right: 1.9rem;
+        top: 50%;
+        transform: translateY(-50%);
+        // display: inline-block;
+    }
+    &-media img {
+        margin-right: 1rem;
+        width: 2.6rem;
+    }
+}
+
+.btn {
+    font-weight: 700;
+    border-radius: 40px;
+    height: 60px;
+    border: none;
+    color: white;
+    cursor: pointer;
+
+    &-callToAction {
+        font-size: 16px;
+        box-shadow: 5px 10px 14px rgba(7, 172, 230, 0.29);
+        background-color: #08a6e4;
+        min-width: 290px;
+        margin-bottom: 60px;
+        &-form {
+            display: block;
+            margin: 1rem 0 1rem auto;
+        }
+    }
+    &-red,
+    &-blue,
+    &-green {
+        width: 10rem;
+        // height: 3rem;
+        position: absolute;
+        margin-top: 76%;
+        left: 50%;
+        transform: translateX(-50%);
+        border-radius: 23px;
+    }
+    &-red {
+        background-color: #eb476e;
+    }
+    &-blue {
+        background-color: #07ace6;
+    }
+    &-green {
+        background-color: #55dfb4;
+    }
+}
+
+.material-symbols-outlined {
+    color: blue;
+    top: 10%;
+    font-variation-settings: "FILL" 0, "wght" 500, "GRAD" 0, "opsz" 48;
+}
