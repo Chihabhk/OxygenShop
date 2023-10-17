@@ -1,133 +1,163 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="stylesheet" href="/styles.css" type="text/css" />
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-        <title>OxygenShop</title>
-    </head>
-    <body>
-        <header class="header">
-            <a href="#" class="header__logo">OXYGENShop</a>
-            <button class="header-menu-icon">
-                <img src="./images/menu-icon.jpg" alt="menu-icon">
-            </button>
-            <nav class="header-menu-nav">
-                <ul class="header-menu-nav-items">
-                    <li><a href="/">WHY US</a>
-                    <li><a href="/">BENEFITS</a>
-                    <li><a href="/">PRICES</a>
-                    <li><a href="/">CONTACT</a>
-                </li>
-            </nav>
-        </header>
 
-        <section class="opening-section">
-            <p class="opening-section__title">Sell More!</p>
-            <p class="opening-section__text">
-                Open shop on our platform and increase your sales
-            </p>
-            <button class="btn btn-callToAction">Open your shop</button>
-            <img class ="opening-section__img" src="./images/laptop-background.jpg" alt="laptop-background" />
-        </section>
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/styles.css" type="text/css" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <title>OxygenShop</title>
+</head>
 
-        <section class="whyUs-section">
-            <h2 class="whyUs-section__title">The most popular sales platform in country</h2>
+<body>
+    <header>
+        <a href="#" class="logo">OXYGENShop</a>
+        <input type="checkbox" id="menu-toggle" />
+        <label for="menu-toggle" class="menu-icon">
+            <span></span>
+            <span></span>
+            <span></span>
+        </label>
+        <nav class="menu">
+            <ul>
+                <li><a href="/">WHY US</a></li>
+                <li><a href="/">BENEFITS</a></li>
+                <li><a href="/">PRICES</a></li>
+                <li><a href="/">CONTACT</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section class="opening-section">
+        <p class="opening-section__title">Sell More!</p>
+        <p class="opening-section__text">
+            Open shop on our platform and increase your sales
+        </p>
+        <button class="btn btn-callToAction">Open your shop</button>
+        <img class="opening-section__img" src="./images/laptop-background.jpg" alt="laptop-background" />
+    </section>
+
+    <section class="whyUs-section">
+        <h2 class="whyUs-section__title">The most popular sales platform in country</h2>
+        <div class="whyUs-section-container">
             <img class="whyUs-section__img" src="./images/icon-red.png" alt="daily-entries" />
             <img class="whyUs-section__img" src="./images/icon-blue.png" alt="daily-entries" />
             <img class="whyUs-section__img" src="./images/icon-green.png" alt="daily-entries" />
+        </div>
+    </section>
 
-        </section>
-
-        <section class="benefits-section">
-            <div class="benefits-section__card">
-                <img class="benefits-section__card-img-1" src="./images/laptop.png" alt="laptop">
+    <section class="benefits-section">
+        <div class="benefits-section__card">
+            <img class="benefits-section__card-img-1" src="./images/laptop.png" alt="laptop">
+            <div>
                 <p class="benefits-section__card-title">Be always first</p>
-                <p  class="benefits-section__card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                <p class="benefits-section__card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
             </div>
-            <div class="benefits-section__card">
-                <img class="benefits-section__card-img-2" src="./images/phone.png" alt="laptop">
+        </div>
+        <div class="benefits-section__card">
+            <img class="benefits-section__card-img-2" src="./images/phone.png" alt="laptop">
+            <div class="benefits-section__card-container">
                 <p class="benefits-section__card-title">Your shop is where you are!</p>
-                <p  class="benefits-section__card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
-            </div> 
-            <div class="benefits-section__card">
-                <p class="benefits-section__card-title">Increase recognition your brand!</p>
-                <p  class="benefits-section__card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+                <p class="benefits-section__card-text benefits-section__card-text-2">Lorem ipsum dolor sit amet,
+                    consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut
+                    enim ad minim veniam.</p>
             </div>
-            <img class="benefits-section-img-3" src="./images/trumpet.png" alt="laptop">
-        </section>
+        </div>
+        <div class="container">
+            <div>
+                <h4>Increase recognition your brand!</h4>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</p>
+            </div>
+            <img src="./images/trumpet.png" alt="laptop">
+        </div>
+    </section>
+    <section class="pricing-section">
+        <h3 class="pricing-section-title">Pricing</h3>
 
-        <section class="pricing-section">
-            <p class="pricing-section-title">Pricing</p>
-
+        <div class="container">
             <div class="pricing-section-card pricing-section-card--basic">
                 <p class="pricing-section-card__title">Basic</p>
                 <p class="pricing-section-card__price pricing-section-card__price-basic">$0</p>
-                    <ul class="pricing-section-card__benefits">
-                        <li><img src="./images/Checkbox.png" alt="checkbox"><span> 100 MB HDD</span></li>
-                        <li><img src="./images/Checkbox.png" alt="checkbox"><span> 1 Subdomains</span></li>
-                        <li><img src="./images/Checkbox.png" alt="checkbox"><span> 2 E-mails</span></li>
-                        <li><img src="./images/Cross.png" alt="cross"><span> Two years license</span></li>
-                        <li><img src="./images/Cross.png" alt="cross"><span> Full support</span> </li>
-                    </ul>
+                <ul class="pricing-section-card__benefits">
+                    <li><img src="./images/Checkbox.png" alt="checkbox"><span> 100 MB HDD</span></li>
+                    <li><img src="./images/Checkbox.png" alt="checkbox"><span> 1 Subdomains</span></li>
+                    <li><img src="./images/Checkbox.png" alt="checkbox"><span> 2 E-mails</span></li>
+                    <li><img src="./images/Cross.png" alt="cross"><span> Two years license</span></li>
+                    <li><img src="./images/Cross.png" alt="cross"><span> Full support</span> </li>
+                </ul>
                 <button class="btn btn-red">Begin</button>
             </div>
 
             <div class="pricing-section-card pricing-section-card--professional">
                 <p class="pricing-section-card__title">Professional</p>
                 <p class="pricing-section-card__price pricing-section-card__price-professional">$25</p>
-                    <ul class="pricing-section-card__benefits">
-                        <li><img src="./images/Checkbox.png" alt="checkbox"><span> 500 MB HDD</span></li>
-                        <li><img src="./images/Checkbox.png" alt="checkbox"><span> 2 Subdomains</span></li>
-                        <li><img src="./images/Checkbox.png" alt="checkbox"><span> 5 E-mails</span></li>
-                        <li><img src="./images/Checkbox.png" alt="checkbox"><span> One year license</span></li>
-                        <li><img src="./images/Cross.png" alt="cross"><span> Full support</span></li>
-                    </ul>
+                <ul class="pricing-section-card__benefits">
+                    <li><img src="./images/Checkbox.png" alt="checkbox"><span> 500 MB HDD</span></li>
+                    <li><img src="./images/Checkbox.png" alt="checkbox"><span> 2 Subdomains</span></li>
+                    <li><img src="./images/Checkbox.png" alt="checkbox"><span> 5 E-mails</span></li>
+                    <li><img src="./images/Checkbox.png" alt="checkbox"><span> One year license</span></li>
+                    <li><img src="./images/Cross.png" alt="cross"><span> Full support</span></li>
+                </ul>
                 <button class="btn btn-blue">Begin</button>
             </div>
 
             <div class="pricing-section-card pricing-section-card--premium">
                 <p class="pricing-section-card__title">Premium</p>
                 <p class="pricing-section-card__price pricing-section-card__price-premium">$60</p>
-                    <ul class="pricing-section-card__benefits">
-                        <li><img src="./images/Checkbox.png" alt="checkbox"><span> 2 GB HDD</span></li>
-                        <li><img src="./images/Checkbox.png" alt="checkbox"><span> 5 Subdomains</span></li>
-                        <li><img src="./images/Checkbox.png" alt="checkbox"><span> 20 E-mails</span></li>
-                        <li><img src="./images/Checkbox.png" alt="checkbox"><span> Two years license</span></li>
-                        <li><img src="./images/Checkbox.png" alt="checkbox"><span> Full support</span></li>
-                    </ul>
+                <ul class="pricing-section-card__benefits">
+                    <li><img src="./images/Checkbox.png" alt="checkbox"><span> 2 GB HDD</span></li>
+                    <li><img src="./images/Checkbox.png" alt="checkbox"><span> 5 Subdomains</span></li>
+                    <li><img src="./images/Checkbox.png" alt="checkbox"><span> 20 E-mails</span></li>
+                    <li><img src="./images/Checkbox.png" alt="checkbox"><span> Two years license</span></li>
+                    <li><img src="./images/Checkbox.png" alt="checkbox"><span> Full support</span></li>
+                </ul>
                 <button class="btn btn-green">Begin</button>
             </div>
-        </section>
-
-        <section class="contact-section">
+        </div>
+    </section>
+    <section class="contact-section">
+        <div class="container">
             <p class="contact-section-title">Any questions?</p>
             <p class="contact-section-text">Leave your email address or call us!</p>
             <div class="contact-section-contact-info">
-                <p class="contact-section-contact-info-email"><img src="images/email-icon.png" alt="email-icon"/>info@bestshop.xyz</p>
-                <p class="contact-section-contact-info-phone"><img src="images/phone-icon.png" alt="phone-icon"/>123 456 789</p>
+                <p class="contact-section-contact-info-email"><img src="images/email-icon.png"
+                        alt="email-icon" />info@bestshop.xyz</p>
+                <p class="contact-section-contact-info-phone"><img src="images/phone-icon.png" alt="phone-icon" />123
+                    456
+                    789</p>
             </div>
-            <form class="contact-form">
-                <label class="contact-form-name" for="name-input">NAME</label>
-                <input class="contact-form-name-input" />
-                <label class="contact-form-email" for="email-input">EMAIL</label>
-                <input class="contact-form-email-input" />
-                <input class="contact-form-checkbox" type="checkbox">
-                    <span> hereby give consent for my personal data included in my application to be processed for the purposes of the recruitment process under the European Parliament’s and Council of the European Union Regulation on the Protection of Natural Persons as of 27 April 2016, with regard to the processing of personal data and on the free movement of such data, and repealing Directive 95/46/EC (Data Protection Directive)</span>
-                </input>
-                <button class="btn btn-callToAction btn-callToAction-form" type="button">Send</button>
-            </form>
-        </section>
+        </div>
+        <form class="contact-form">
+            <label class="contact-form-name" for="name-input">NAME</label>
+            <input class="contact-form-name-input" id="name-input" />
+            <label class="contact-form-email" for="email-input">EMAIL</label>
+            <input class="contact-form-email-input" id="email-input" />
+            <input class="contact-form-checkbox" type="checkbox" id="contact-form-checkbox" />
+            <label for="contact-form-checkbox"> hereby give consent for my personal data included in my application to
+                be processed for the purposes
+                of the recruitment process under the European Parliament’s and Council of the European Union Regulation
+                on the Protection of Natural Persons as of 27 April 2016, with regard to the processing of personal data
+                and on the free movement of such data, and repealing Directive 95/46/EC (Data Protection
+                Directive)</label>
+            </input>
+            <button class="btn btn-callToAction btn-callToAction-form" type="button" name="submit">Send</button>
+        </form>
+    </section>
 
-        <footer class="footer">
+    <footer>
+        <span>
             <p class="footer-logo">OXYGENShop</p>
             <p class="footer-text">© 2022 OXYGEN, All Rights Reserved</p>
-            <div class="footer-media">
-                <img src="images/twitter-icon.png" alt="twitter-icon" />
-                <img src="images/facebook-icon.png" alt="facebook-icon" />
-            </div>
-        </footer>
-    </body>
+        </span>
+        <div class="footer-media">
+            <img src="images/twitter-icon.png" alt="twitter-icon" />
+            <img src="images/facebook-icon.png" alt="facebook-icon" />
+        </div>
+    </footer>
+</body>
+
 </html>

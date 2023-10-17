@@ -8,5 +8,8 @@
     "sass": "node-sass -w styles.scss -o ."
   },
   "author": "Chihab",
-  "license": "ISC"
+  "license": "ISC",
+  "dependencies": {
+    "standard": "^17.1.0"
+  }
 }
