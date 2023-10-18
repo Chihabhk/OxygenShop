@@ -55,16 +55,15 @@ header {
             height: 0.2rem;
             background: #08a6e4;
             border-radius: 0.2rem;
-            transition: all 300ms;
+            transition: all 300ms ease;
             transform-origin: left;
         }
     }
 
     > nav.menu {
         position: fixed;
-        top: 65px;
-        left: 0;
-        // margin: 0 -4rem;
+        top: 68px;
+        left: -100%;
         width: 100%;
         background: white;
         opacity: 0;
@@ -94,6 +93,7 @@ header {
     > input#menu-toggle:checked {
         ~ nav.menu {
             opacity: 1;
+            left: 0%;
         }
 
         + label.menu-icon span:first-child {
@@ -392,33 +392,34 @@ footer {
     > span {
         display: flex;
         flex-direction: column;
+        > p.footer-logo {
+            // position: absolute;
+            left: 5%;
+            font-weight: 300;
+            font-size: 26px;
+            color: #08a6e4;
+            text-decoration: none;
+            cursor: pointer;
+        }
+        > p.footer-text {
+            font-size: 11px;
+            font-family: "Open Sans";
+            font-weight: 400;
+        }
     }
-    &-logo {
-        // position: absolute;
-        left: 5%;
-        font-weight: 300;
-        font-size: 26px;
-        color: #08a6e4;
-        text-decoration: none;
-        cursor: pointer;
-    }
-    &-text {
-        font-size: 11px;
-        font-family: "Open Sans";
-        font-weight: 400;
-    }
-
-    &-media {
-        position: absolute;
-        right: 1.9rem;
-        top: 50%;
-        transform: translateY(-50%);
-        // display: inline-block;
-    }
-    &-media img {
-        cursor: pointer;
-        margin-right: 1rem;
-        width: 2.6rem;
+    > div.footer-media {
+        &-media {
+            position: absolute;
+            right: 1.9rem;
+            top: 50%;
+            transform: translateY(-50%);
+        }
+        img,
+        img {
+            cursor: pointer;
+            margin-right: 1rem;
+            width: 2.6rem;
+        }
     }
 }
 

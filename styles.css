@@ -48,12 +48,12 @@ header {
       height: 0.2rem;
       background: #08a6e4;
       border-radius: 0.2rem;
-      transition: all 300ms;
+      transition: all 300ms ease;
       transform-origin: left; }
   header > nav.menu {
     position: fixed;
-    top: 65px;
-    left: 0;
+    top: 68px;
+    left: -100%;
     width: 100%;
     background: white;
     opacity: 0;
@@ -75,7 +75,8 @@ header {
           padding-bottom: 0.7rem;
           border-bottom: 4px solid #08a6e4; }
   header > input#menu-toggle:checked ~ nav.menu {
-    opacity: 1; }
+    opacity: 1;
+    left: 0%; }
   header > input#menu-toggle:checked + label.menu-icon span:first-child {
     transform: rotate(45deg); }
   header > input#menu-toggle:checked + label.menu-icon span:nth-child(2) {
@@ -299,23 +300,24 @@ footer {
   footer > span {
     display: flex;
     flex-direction: column; }
-  footer-logo {
-    left: 5%;
-    font-weight: 300;
-    font-size: 26px;
-    color: #08a6e4;
-    text-decoration: none;
-    cursor: pointer; }
-  footer-text {
-    font-size: 11px;
-    font-family: "Open Sans";
-    font-weight: 400; }
-  footer-media {
+    footer > span > p.footer-logo {
+      left: 5%;
+      font-weight: 300;
+      font-size: 26px;
+      color: #08a6e4;
+      text-decoration: none;
+      cursor: pointer; }
+    footer > span > p.footer-text {
+      font-size: 11px;
+      font-family: "Open Sans";
+      font-weight: 400; }
+  footer > div.footer-media-media {
     position: absolute;
     right: 1.9rem;
     top: 50%;
     transform: translateY(-50%); }
-  footer-media img {
+  footer > div.footer-media img,
+  footer > div.footer-media img {
     cursor: pointer;
     margin-right: 1rem;
     width: 2.6rem; }
